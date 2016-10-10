@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <style type="text/css">
+        .ad
+        {
+            width: 1000px; height:400px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/Sear.css" rel="stylesheet" />
+    <link href="styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id= "wrapper">
+        <div id= "top_nav">
+        <div id="log">
+            <ul>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="Register.aspx">Register</a></li>
+                 <li><a href="enquiries.aspx">Contact Us</a></li>
+            </ul>
+        </div>
+            <div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
+            <input type="submit" value="search" class="tfbutton">
+		</form>
+                </div>
+        <div id="menu">
+                <ul>
+                    <li><a href="homepage.aspx">Home</a></li>
+                    <li><a href="Tiles.aspx">Tiles</a>
+                        <ul>
+                            <li> <a href="Floor_Tiles.aspx">Floor Tiles</a></li>
+                            <li><a href="Bathrooms .aspx">Wall Tiles</a></li>
+                            <!--<li><a href="Kitchens.aspx">Bathroom Tiles</a></li>
+                            <li><a href="Taps.aspx">Kitchen Tiles</a></li> -->
+                        </ul>
+                    </li>
+                   
+                    <li><a href="Showers.aspx">Bathrooms</a></li>
+                      <!--<li><a href="Showers.aspx">Showers</a></li> -->
+                    <li><a href="Kitchens.aspx">Kitchens</a></li>
+                    <li><a href="Taps.aspx">Taps</a></li>
+                </ul>
+        </div>
+        </div>
+        <div class="clear"></div>
+        <div id= "banner">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile.xml"  CssClass="ad" />
+                <asp:Timer ID="Timer1" runat="server" Interval="2000">
+                </asp:Timer>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        </div>
+        <div id= "side_nav">
+        </div>
+        <div class="clear"></div>
+        <div id= "content">
+        <asp:ContentPlaceHolder id="ContentBody" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+
+        <div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW OUR  MISSIONS ON</h1>
+					<div>
+						<a href="https://www.facebook.com/berka.ayowa/" class="facebook">facebook</a>
+						<a href="https://twitter.com/tamiie_07" class="twitter">twitter</a>
+						<a href="https://plus.google.com/u/0/" class="googleplus">googleplus</a>
+				
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>&copy;Royal_Construction.com </p>
+				</div>
+			</div>
+		</div>
+         <!--<div id="footer"> 
+
+			<p> &copy;Royal_Construction.com </p>
+        </div>-->
+    </div>
+    </form>
+</body>
+</html>

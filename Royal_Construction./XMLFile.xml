@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/images/sliders/o-KITCHEN-facebook.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/pic4.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/pic3.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/pic2.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/1438972024-fall-colors-room-decor-inspiration-00.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/modern-kitchen-amenities-32-decor-ideas.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/sliders/o-KITCHEN-facebook.jpg</ImageUrl>
+    <Impressions> 100  </Impressions>
+  </Ad>
+</Advertisements>
